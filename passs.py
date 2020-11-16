@@ -7,7 +7,7 @@ cur=conn.cursor()
 cur.execute("create database if not exists project")
 cur.execute("use project")
 
-cur.execute("create table if not exists passwords (NO int not null primary key auto_increment,Username not null char(10),Password char(10),Email_linked char(10),App_name varchar(10))")
+cur.execute("create table if not exists passwords (NO int  primary key not null auto_increment,Username  varchar(20) not null ,Password varchar(10),Email_linked char(20),App_name varchar(10))")
 cur.execute("alter table passwords auto_increment=100")
 
 def adddata():
