@@ -2,8 +2,9 @@ import passs
 import os
 import time
 
-username="jebin"
-password="secret"
+info=["jebin","secret"]
+username=info[0]
+password=info[1]
 print("--PASSWORD MANAGER--".center(71,"🔑"))  
 print("^^^^^^^^^^^^^^^^^")
 user=input("Enter your username     :: ")
@@ -13,16 +14,11 @@ if username!= user or password != pas:
     print("")
     print("Incorrect username or password.")
     print("Retry in 5 seconds...*WARNING!!! ONLY ONE MORE CHANCE!!!!*")
-    print("5.....",end=" ")
-    time.sleep(1)
-    print("4.....",end=" ")
-    time.sleep(1)
-    print("3.....",end=" ")
-    time.sleep(1)
-    print("2.....",end=" ")
-    time.sleep(1)
-    print("1....................",end=" ")
-    time.sleep(1)
+    for i in range(1,6):
+        print(i," >> ",end="")
+        time.sleep(1)
+
+    
     print("")
     print("")
     print("^^^^^^^^^^^^^^^^^")
@@ -36,12 +32,10 @@ if username!= user or password != pas:
         print("")
         print("Incorrect username or password.")
         print("No more chances , exiting in >>>>>>>>")
-        print("3.....",end=" ")
-        time.sleep(1)
-        print("2.....",end=" ")
-        time.sleep(1)
-        print("1....................",end=" ")
-        time.sleep(1.5)
+        for i in range(1,3):
+            print(i," >> ",end="")
+            time.sleep(1)
+
         print("⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠ ⚠")
         print("")
         
