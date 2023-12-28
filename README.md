@@ -1,3 +1,5 @@
+[![Years Badge](https://badges.pufler.dev/years/jebinshaju)](https://badges.pufler.dev)
+
 # password-manager
 
 Password Manager is a simple command-line application that allows you to securely generate and store passwords for different accounts. It uses MySQL database to store the encrypted passwords and Python to implement the logic and interface.
